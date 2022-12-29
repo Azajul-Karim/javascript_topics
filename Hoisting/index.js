@@ -4,8 +4,8 @@
 
 // var name = "Topu";
 
-//in js there 2 types of scopes , function scope and block scope
-//in function scope variable will not be hoisted
+// in js there 2 types of scopes , function scope and block scope
+// in function scope variable will not be hoisted
 // function sayName() {
 //   console.log("ln 8", name);
 

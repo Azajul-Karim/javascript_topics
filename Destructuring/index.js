@@ -8,9 +8,9 @@ let info = {
   address: "Golapganj",
 };
 
-// console.log(info.name);
+console.log(info.name);
 
-// let { name, age } = info;
+let { name, age } = info;
 // console.log(name, age);
 
 // let { name: topuname, age: topuage } = info;
@@ -51,7 +51,7 @@ let fruits = ["Apple", "Mango", "Grape"];
 // console.log(fruit, fruit3);
 
 let fruitsalt = ["Guava", "Melon"];
-// let finalfruits = [...fruits, ...fruitsalt];
+let finalfruits = [...fruits, ...fruitsalt];
 
 let allowmorefruits = true;
 

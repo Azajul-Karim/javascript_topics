@@ -1,62 +1,63 @@
-// function sayHello() {
-//   console.log(arguments);
-//   console.log(arguments[2]);
-//   // arguments.forEach((element) => {
-//   //   console.log(element);
-//   // });
-//   // this will throw a typeerror
+function sayHello() {
+  console.log(arguments);
+  console.log(arguments[2]);
+  arguments.forEach((element) => {
+    console.log(element);
+  });
 
-//   for (let i = 0; i < arguments.length; i++) {
-//     console.log(arguments[i]);
-//   }
-// }
+  // this will throw a typeerror
 
-// sayHello(1, 2, 3, 4);
+  for (let i = 0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+  }
+}
+
+sayHello(1, 2, 3, 4);
 
 // use arguments with spread
 
-// function sayHello(a) {
-//   console.log(arguments);
+function sayHello(a) {
+  console.log(arguments);
 
-//   let spreadArguments = [...arguments];
+  let spreadArguments = [...arguments];
 
-//   spreadArguments.forEach((element) => {
-//     console.log(element);
-//   });
-//   console.log(spreadArguments);
-// }
+  spreadArguments.forEach((element) => {
+    console.log(element);
+  });
+  console.log(spreadArguments);
+}
 
-// sayHello(1, 2, 3, 4);
+sayHello(1, 2, 3, 4);
 
-// function sayHello(...args) {
-//   console.log(args);
-// }
+function sayHello(...args) {
+  console.log(args);
+}
 
-// sayHello(1, 2, 3, 4, 5);
+sayHello(1, 2, 3, 4, 5);
 
 // default parameter
 
-// function sayFullName(firstName, lastName) {
-//   var firstName = firstName || "";
-//   var lastName = lastName || "";
-//   console.log(firstName + " " + lastName);
-// }
+function sayFullName(firstName, lastName) {
+  var firstName = firstName || "";
+  var lastName = lastName || "";
+  console.log(firstName + " " + lastName);
+}
 
-// function sayFullName(firstName = "", lastName = "") {
-//   console.log(firstName + " " + lastName);
-// }
+function sayFullName(firstName = "", lastName = "") {
+  console.log(firstName + " " + lastName);
+}
 
-// function sayFullName(
-//   nameObj,
-//   defaultObj = {
-//     ...{
-//       firstName: "",
-//       lastName: "",
-//     },
-//     ...nameObj,
-//   }
-// ) {
-//   console.log(defaultObj.firstName + " " + defaultObj.lastName);
-// }
+function sayFullName(
+  nameObj,
+  defaultObj = {
+    ...{
+      firstName: "",
+      lastName: "",
+    },
+    ...nameObj,
+  }
+) {
+  console.log(defaultObj.firstName + " " + defaultObj.lastName);
+}
 
-// sayFullName({ lastName: "Topu" });
+sayFullName({ lastName: "Topu" });
