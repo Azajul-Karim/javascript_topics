@@ -90,5 +90,7 @@
 let items = new Set(["mango", "mango", "orange", "orange"]);
 
 items.add("apple");
+items.add("Banana");
 
 console.log(items.keys());
+console.log(items);
